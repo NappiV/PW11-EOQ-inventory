@@ -78,11 +78,11 @@ git clone https://github.com/NappiV/PW11-EOQ-inventory.git
 cd PW11-EOQ-inventory
 ```
 ### 2. Installa le dipendenze
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 ### 3. Genera il dataset
-python data_gen.py
+```python data_gen.py```
 ### 4. Avvia l'app
-streamlit run app.py
+```streamlit run app.py```
 
 ---
 

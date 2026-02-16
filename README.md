@@ -73,7 +73,7 @@ data_gen.py # Generazione dataset simulato (3 anni)
 
 ## Avvio dell'applicazione
 ### 1. Clona il repository
-```bash
+```
 git clone https://github.com/NappiV/PW11-EOQ-inventory.git
 cd PW11-EOQ-inventory
 ```

@@ -35,11 +35,12 @@ SS = z * sqrt((sigma_d^2 * L) + (d^2 * sigma_L^2))
 ---
 
 ## Struttura del progetto
-data_gen.py # Generazione dataset simulato (3 anni)
+- data_gen.py # Generazione dataset simulato (3 anni)
 - models.py # Calcoli EOQ, Safety Stock e ROP
 - inventory.py # Simulazione operativa del magazzino
 - app.py # Interfaccia utente Streamlit
 - demand_3y.csv # Dataset generato
+- requirements.txt # Dipendenze del progetto
 - README.md
 
 
@@ -94,6 +95,25 @@ cd PW11-EOQ-inventory
 4. Analizza risultati e confronto tra strategie
 
 ---
+
+## Output della simulazione
+
+Il modulo di simulazione `inventory.py` permette anche di esportare i risultati su file.
+
+Eseguendo direttamente il modulo:
+
+```bash
+python inventory.py
+```
+vengono generati automaticamente:
+
+inventory_results.csv → storico giornaliero delle scorte e degli stockout per i due scenari
+
+inventory_plot.png → grafico dell’andamento della giacenza nei primi giorni della simulazione
+
+Questi file consentono di analizzare i risultati anche al di fuori dell’interfaccia grafica (es. Excel o report).
+
+Nota: l’app Streamlit (streamlit run app.py) visualizza i risultati ma non li salva automaticamente.
 
 ## Scopo didattico
 
